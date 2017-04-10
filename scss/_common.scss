@@ -1,0 +1,47 @@
+* {
+    font-family: $font-family-book;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: $font-family-bold;
+}
+
+h5,
+h6 {
+    font-family: $font-family-news;
+}
+
+label,
+input,
+select,
+a,
+button,
+dl,
+dt,
+dd {
+    font-family: $font-family-news;
+}
+
+dt {
+    font-weight: normal;
+}
+
+/* -------------------- START :: ANIMATION FOR LIST ----------------------------*/
+
+ion-item {
+    &.ng-enter {
+        @include animation('fadeInLeft');
+    }
+}
+
+/* -------------------- END :: ANIMATION FOR LIST ----------------------------*/
+
+input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly] {
+    background-color: initial;
+    cursor: not-allowed;
+    color: #5496E0;
+}

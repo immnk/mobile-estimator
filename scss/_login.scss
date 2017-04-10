@@ -1,0 +1,41 @@
+.login_content_wrapper {
+    min-height: 100vh;
+    background: url('../img/LoginBackground.png');
+    background-size: cover;
+    position: relative;
+    color: $theme-foreground;
+    font-family: $font-family-book;
+    overflow: hidden;
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $theme-overlay;
+        z-index: 1;
+    }
+    .logo {
+        position: relative;
+        background: url('../img/Logo.png') no-repeat;
+        height: 68px;
+        width: 200px;
+        margin: 50px auto 0;
+        background-size: contain;
+        z-index: 10;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: $theme-foreground;
+        z-index: 10;
+        padding: 10px;
+        background: $theme-background-alternate;
+        text-align: center;
+        .footer-text {
+            font-size: 8px;
+        }
+    }
+}

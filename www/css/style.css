@@ -1,1 +1,102 @@
-/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../assets/open-sans/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url("../assets/open-sans/OpenSans-BoldItalic.ttf"); }
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../assets/open-sans/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url("../assets/open-sans/OpenSans-LightItalic.ttf"); }
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../assets/open-sans/OpenSans-Semibold.ttf"); }
+@font-face {
+  font-family: "OpenSans-SemiboldItalic";
+  src: url("../assets/open-sans/OpenSans-SemiboldItalic.ttf"); }
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../assets/open-sans/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("../assets/open-sans/OpenSans-Italic.ttf"); }
+* {
+  font-family: "OpenSans-Light";
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "OpenSans-Bold"; }
+
+h5,
+h6 {
+  font-family: "OpenSans-Regular"; }
+
+label,
+input,
+select,
+a,
+button,
+dl,
+dt,
+dd {
+  font-family: "OpenSans-Regular"; }
+
+dt {
+  font-weight: normal; }
+
+/* -------------------- START :: ANIMATION FOR LIST ----------------------------*/
+ion-item.ng-enter {
+  -webkit-animation: "fadeInLeft" 1s;
+  -moz-animation: "fadeInLeft" 1s;
+  -ms-animation: "fadeInLeft" 1s;
+  animation: "fadeInLeft" 1s; }
+
+/* -------------------- END :: ANIMATION FOR LIST ----------------------------*/
+input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly] {
+  background-color: initial;
+  cursor: not-allowed;
+  color: #5496E0; }
+
+.login_content_wrapper {
+  min-height: 100vh;
+  background: url("../img/LoginBackground.png");
+  background-size: cover;
+  position: relative;
+  color: #FFF;
+  font-family: "OpenSans-Light";
+  overflow: hidden; }
+  .login_content_wrapper .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 13, 20, 0.9);
+    z-index: 1; }
+  .login_content_wrapper .logo {
+    position: relative;
+    background: url("../img/Logo.png") no-repeat;
+    height: 68px;
+    width: 200px;
+    margin: 50px auto 0;
+    background-size: contain;
+    z-index: 10; }
+  .login_content_wrapper .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    z-index: 10;
+    padding: 10px;
+    background: rgba(216, 216, 216, 0.3);
+    text-align: center; }
+    .login_content_wrapper .footer .footer-text {
+      font-size: 8px; }
+
+/*# sourceMappingURL=style.css.map */

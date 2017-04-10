@@ -1,0 +1,82 @@
+
+@mixin ellipsis() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin circle($diameter) {
+    height: $diameter;
+    width: $diameter;
+    border-radius: $diameter/2;
+}
+
+@mixin flex() {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-align-center() {
+    -webkit-align-self: center;
+    align-self: center;
+}
+
+@mixin flex-item-center() {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+@mixin animation($name: 'slideInRight', $time: 1s) {
+    -webkit-animation: $name $time;
+    -moz-animation: $name $time;
+    -ms-animation: $name $time;
+    animation: $name $time;
+}
+
+@font-face {
+    font-family: $font-family-bold;
+    // src: url('../assets/ClanOT/ClanOT-Bold.otf');
+    src: url('../assets/open-sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: $font-family-bold-italic;
+    // src: url('../assets/ClanOT/ClanOT-BoldItalic.otf');
+    src: url('../assets/open-sans/OpenSans-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: $font-family-book;
+    // src: url('../assets/ClanOT/ClanOT-Book.otf');
+    src: url('../assets/open-sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: $font-family-book-italic;
+    // src: url('../assets/ClanOT/ClanOT-BookItalic.otf');
+    src: url('../assets/open-sans/OpenSans-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: $font-family-medium;
+    // src: url('../assets/ClanOT/ClanOT-Medium.otf');
+    src: url('../assets/open-sans/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: $font-family-medium-italic;
+    // src: url('../assets/ClanOT/ClanOT-MediumItalic.otf');
+    src: url('../assets/open-sans/OpenSans-SemiboldItalic.ttf');
+}
+
+@font-face {
+    font-family: $font-family-news;
+    // src: url('../assets/ClanOT/ClanOT-News.otf');
+    src: url('../assets/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: $font-family-news-italic;
+    // src: url('../assets/ClanOT/ClanOT-NewsItalic.otf');
+    src: url('../assets/open-sans/OpenSans-Italic.ttf');
+}
