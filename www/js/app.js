@@ -3,7 +3,8 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module(ESTIMATOR.APP_NAME, ['ionic', ESTIMATOR.MODULE_NAMES.CONTROLLERS,
+angular.module(ESTIMATOR.APP_NAME, ['ionic', 'ngAnimate', 
+    ESTIMATOR.MODULE_NAMES.CONTROLLERS,
     ESTIMATOR.MODULE_NAMES.FACTORIES, ESTIMATOR.MODULE_NAMES.UTILS,
     ESTIMATOR.MODULE_NAMES.DIRECTIVES, ESTIMATOR.MODULE_NAMES.MESSAGES,
     ESTIMATOR.MODULE_NAMES.CONSTANTS

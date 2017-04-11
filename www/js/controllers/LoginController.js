@@ -13,7 +13,7 @@ function LoginController($scope, $state, utils, LoginFactory) {
     }
 
     vm.loginFormSubmit = loginFormSubmit;
-    
+
     function loginFormSubmit(loginForm, force) {
         utils.Logger.debug(ESTIMATOR.CONTROLLERS.LoginController + " - loginFormSubmit: start");
 
