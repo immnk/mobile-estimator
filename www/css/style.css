@@ -22,6 +22,26 @@
 @font-face {
   font-family: "OpenSans-Italic";
   src: url("../assets/open-sans/OpenSans-Italic.ttf"); }
+.bar.bar-stable {
+  background-color: #24376D; }
+  .bar.bar-stable .title {
+    color: #FFFFFF; }
+  .bar.bar-stable .button.button-clear {
+    color: #FFFFFF; }
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear; }
+
+.list .item.item-accordion.ng-hide {
+  line-height: 0px; }
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important; }
+
 * {
   font-family: "OpenSans-Light";
   box-sizing: border-box; }
@@ -67,7 +87,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.clon
   background: url("../img/LoginBackground.png");
   background-size: cover;
   position: relative;
-  color: #FFF;
+  color: #FFFFFF;
   font-family: "OpenSans-Light";
   overflow: hidden; }
   .login_content_wrapper .overlay {
@@ -91,7 +111,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.clon
     bottom: 0;
     left: 0;
     right: 0;
-    color: #FFF;
+    color: #FFFFFF;
     z-index: 10;
     padding: 10px;
     background: rgba(216, 216, 216, 0.3);
