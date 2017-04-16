@@ -14,20 +14,39 @@ var ESTIMATOR = {
         LOCAL_STORAGE: "LocalStorage"
     },
     CONTROLLERS: {
-        LoginController: "LoginController"
+        LoginController: "LoginController",
+				LandingController: 'LandingController',
+				AbstractController: 'AbstractController'
     },
     FACTORIES: {
         LoginFactory: "LoginFactory",
         Logger: "Logger",
-        LocalStorage: "LocalStorage"
+        LocalStorage: "LocalStorage",
+				LandingFactory: "LandingFactory"
     },
     STATES: {
+			ABSTRACT: {
+				name: 'estimator',
+				url: '/menu',
+        isAbstract: true,
+        templateUrl: 'templates/menu.html',
+        controller: 'AbstractController'
+			},
     	LOGIN: {
     		name: 'login',
     		url: '/login',
     		templateUrl: 'templates/login.html',
     		controller: 'LoginController',
     		factory: 'LoginFactory',
+    		cache: false
+    	},
+    	LANDING: {
+    		name: 'estimator.landingPage',
+				injectViewInto: 'menuContent',
+    		url: '/landing',
+    		templateUrl: 'templates/landing.html',
+    		controller: 'LandingController',
+    		factory: 'LandingFactory',
     		cache: false
     	}
     },

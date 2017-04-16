@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module(ESTIMATOR.APP_NAME, ['ionic', 'ngAnimate', 
+angular.module(ESTIMATOR.APP_NAME, ['ionic', 'ngAnimate',
     ESTIMATOR.MODULE_NAMES.CONTROLLERS,
     ESTIMATOR.MODULE_NAMES.FACTORIES, ESTIMATOR.MODULE_NAMES.UTILS,
     ESTIMATOR.MODULE_NAMES.DIRECTIVES, ESTIMATOR.MODULE_NAMES.MESSAGES,
@@ -29,10 +29,27 @@ angular.module(ESTIMATOR.APP_NAME, ['ionic', 'ngAnimate',
             utils.init();
         });
     }])
-    .config(['$stateProvider', '$urlRouterProvider', ConfigInitiator]);
+
+.config(['$stateProvider', '$urlRouterProvider', ConfigInitiator]);
 
 function ConfigInitiator($stateProvider, $urlRouterProvider) {
     $stateProvider
+        .state(ESTIMATOR.STATES.ABSTRACT.name, {
+            url: ESTIMATOR.STATES.ABSTRACT.url,
+            abstract: ESTIMATOR.STATES.ABSTRACT.isAbstract,
+            templateUrl: ESTIMATOR.STATES.ABSTRACT.templateUrl,
+            controller: ESTIMATOR.STATES.ABSTRACT.controller
+        })
+        .state(ESTIMATOR.STATES.LANDING.name, {
+            url: ESTIMATOR.STATES.LANDING.url,
+            views: {
+              'menuContent' : {
+                templateUrl: ESTIMATOR.STATES.LANDING.templateUrl,
+                controller: ESTIMATOR.STATES.LANDING.controller
+              }
+            },
+            cache: ESTIMATOR.STATES.LANDING.cache
+        })
         .state(ESTIMATOR.STATES.LOGIN.name, {
             url: ESTIMATOR.STATES.LOGIN.url,
             templateUrl: ESTIMATOR.STATES.LOGIN.templateUrl,
@@ -40,6 +57,5 @@ function ConfigInitiator($stateProvider, $urlRouterProvider) {
             controllerAs: 'vm',
             cache: ESTIMATOR.STATES.LOGIN.cache
         })
-
-    $urlRouterProvider.otherwise(ESTIMATOR.STATES.LOGIN.url);
+    $urlRouterProvider.otherwise(ESTIMATOR.STATES.LANDING.url);
 }
