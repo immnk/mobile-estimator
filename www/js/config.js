@@ -27,7 +27,7 @@ var ESTIMATOR = {
     STATES: {
 			ABSTRACT: {
 				name: 'estimator',
-				url: '/menu',
+				url: '/estimator',
         isAbstract: true,
         templateUrl: 'templates/menu.html',
         controller: 'AbstractController'
@@ -47,7 +47,8 @@ var ESTIMATOR = {
     		templateUrl: 'templates/landing.html',
     		controller: 'LandingController',
     		factory: 'LandingFactory',
-    		cache: false
+    		cache: false,
+				defaultUrl: '/estimator/landing'
     	}
     },
     BACK_END: {

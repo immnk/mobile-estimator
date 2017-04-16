@@ -2,7 +2,7 @@ controllers.controller(ESTIMATOR.CONTROLLERS.LandingController, LandingControlle
 
 LandingController.$inject = ['$scope', '$state', 'utils', ESTIMATOR.FACTORIES.LandingFactory];
 
-function LoginController($scope, $state, utils, LoginFactory) {
+function LandingController($scope, $state, utils, LandingFactory) {
 
     init();
 

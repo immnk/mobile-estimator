@@ -57,5 +57,5 @@ function ConfigInitiator($stateProvider, $urlRouterProvider) {
             controllerAs: 'vm',
             cache: ESTIMATOR.STATES.LOGIN.cache
         })
-    $urlRouterProvider.otherwise(ESTIMATOR.STATES.LANDING.url);
+    $urlRouterProvider.otherwise(ESTIMATOR.STATES.LANDING.defaultUrl);
 }
