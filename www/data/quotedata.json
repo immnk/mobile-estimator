@@ -1,0 +1,125 @@
+{
+        "name":"createquote",
+        "version": "1",
+        "quoteparameters":
+        {
+
+                "Business Domain" : {
+                  "hasbasevalue":"false",
+                  "ismutiselect":"false",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":["Retail","Healthcare","Life Insurance","Auto Insurance","Banking","Electrical Components","Manufacturing & Logistics","Utilities"]
+                },
+                "Users" : {
+                  "hasbasevalue":"false",
+                  "ismutiselect":"false",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":["Agents/Brokers","Sales","Customers","Providers","Underwriters","Claim Specialists"]
+                },
+                "Type of Application" : {
+                  "hasbasevalue":"false",
+                  "ismutiselect":"false",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":["Products Catalog","Account Management","Payment","Customer Service","E-Commerce"]
+                },
+                "Team Distribution" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"false",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":[{"All onshore":"100%"},{"Most onshore":	"80%"},{"Most offshore":"20%"},{"All offshore":"0%"}]
+                },
+                "OS" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":[{"iOS":"8"},{"Android":	"12"},{"Windows":"16"},{"Web":"20"}]
+                },
+                "Screen Complexity" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+                },
+                "Widgets Complexity" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+                },
+                "Native Features" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+                },
+                "User Management" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"false",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":[{"Google":"1"},{"LinkedIn":	"1"},{"Facebook":"1"},{"LDAP":"1.2"}]
+                },
+                "Security Requirements" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "true",
+                  "isdefault": "true",
+                  "values":[{"SSL":"1.2"},{"Integration with ISAM":	"1.3"},{"2-Factor Authentication":"1.5"},{"Custom Data Encryption":"1.6"}]
+                },
+                "External API Integration" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[{"Internal - SOAP":"1"},{"Internal - REST":	"1.1"},{"External - PublicSOAP":"1.1"},{"External - PublicREST":"1.2"},{"External - CustomSOAP":"1.2"},{"External - CustomREST":"1.3"}]
+                },
+                "Use Cases" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[
+                    {"Buy Policy": {
+                                      "level": "Medium",
+                                      "value": "1.2"
+                                    }
+                    },
+                    {"Pay Policy": {
+                                      "level": "Complex",
+                                      "value": "1.4"
+                                    }
+                    },
+                    {"Create Claim": {
+                                      "level": "Medium",
+                                      "value": "1.2"
+                                    }
+                    },
+                    {"View Claim Status": {
+                                      "level": "Simple",
+                                      "value": "1.1"
+                                    }
+                    }]
+                },
+                "Native Features" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+                }
+        },
+        "estimationparameters": {
+
+        },
+        "calculatedvalues": {
+
+        }
+}
