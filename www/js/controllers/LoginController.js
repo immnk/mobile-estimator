@@ -1,8 +1,8 @@
 controllers.controller(ESTIMATOR.CONTROLLERS.LoginController, LoginController);
 
-LoginController.$inject = ['$scope', '$state', 'utils', ESTIMATOR.FACTORIES.LoginFactory];
+LoginController.$inject = ['$scope', '$state', 'utils', '$timeout', ESTIMATOR.FACTORIES.LoginFactory];
 
-function LoginController($scope, $state, utils, LoginFactory) {
+function LoginController($scope, $state, utils, $timeout, LoginFactory) {
 
     /* jshint validthis: true */
     var vm = this;
@@ -24,6 +24,12 @@ function LoginController($scope, $state, utils, LoginFactory) {
 
     function init() {
         utils.Logger.debug(ESTIMATOR.CONTROLLERS.LoginController + " - init :start");
+
+        utils.showSpinner();
+        $timeout(function() {
+            utils.hideSpinner();
+            $state.go(ESTIMATOR.STATES.LANDING.name);
+        }, 1000);
 
         utils.Logger.debug(ESTIMATOR.CONTROLLERS.LoginController + " - init :end");
     }

@@ -34,11 +34,11 @@ angular.module(ESTIMATOR.APP_NAME, ['ionic', 'ngAnimate',
 
 function ConfigInitiator($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state(ESTIMATOR.STATES.ABSTRACT.name, {
-            url: ESTIMATOR.STATES.ABSTRACT.url,
-            abstract: ESTIMATOR.STATES.ABSTRACT.isAbstract,
-            templateUrl: ESTIMATOR.STATES.ABSTRACT.templateUrl,
-            controller: ESTIMATOR.STATES.ABSTRACT.controller
+        .state(ESTIMATOR.STATES.SIDEMENU.name, {
+            url: ESTIMATOR.STATES.SIDEMENU.url,
+            SIDEMENU: ESTIMATOR.STATES.SIDEMENU.isSIDEMENU,
+            templateUrl: ESTIMATOR.STATES.SIDEMENU.templateUrl,
+            controller: ESTIMATOR.STATES.SIDEMENU.controller
         })
         .state(ESTIMATOR.STATES.LANDING.name, {
             url: ESTIMATOR.STATES.LANDING.url,
@@ -57,5 +57,5 @@ function ConfigInitiator($stateProvider, $urlRouterProvider) {
             controllerAs: 'vm',
             cache: ESTIMATOR.STATES.LOGIN.cache
         })
-    $urlRouterProvider.otherwise(ESTIMATOR.STATES.LANDING.defaultUrl);
+    $urlRouterProvider.otherwise(ESTIMATOR.STATES.LOGIN.url);
 }

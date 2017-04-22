@@ -1,5 +1,5 @@
 var ESTIMATOR = {
-	APP_VERSION: "0.0.0",
+    APP_VERSION: "0.0.0",
     APP_NAME: "estimator",
     MESSAGES: "ESTIMATOR_MESSAGES",
     CONSTANTS: "ESTIMATOR_CONSTANTS",
@@ -15,44 +15,41 @@ var ESTIMATOR = {
     },
     CONTROLLERS: {
         LoginController: "LoginController",
-				LandingController: 'LandingController',
-				AbstractController: 'AbstractController'
+        LandingController: 'LandingController',
+        SideMenuController: 'SideMenuController'
     },
     FACTORIES: {
         LoginFactory: "LoginFactory",
         Logger: "Logger",
         LocalStorage: "LocalStorage",
-				LandingFactory: "LandingFactory"
+        LandingFactory: "LandingFactory"
     },
     STATES: {
-			ABSTRACT: {
-				name: 'estimator',
-				url: '/estimator',
-        isAbstract: true,
-        templateUrl: 'templates/menu.html',
-        controller: 'AbstractController'
-			},
-    	LOGIN: {
-    		name: 'login',
-    		url: '/login',
-    		templateUrl: 'templates/login.html',
-    		controller: 'LoginController',
-    		factory: 'LoginFactory',
-    		cache: false
-    	},
-    	LANDING: {
-    		name: 'estimator.landingPage',
-				injectViewInto: 'menuContent',
-    		url: '/landing',
-    		templateUrl: 'templates/landing.html',
-    		controller: 'LandingController',
-    		factory: 'LandingFactory',
-    		cache: false,
-				defaultUrl: '/estimator/landing'
-    	}
+        LOGIN: {
+            name: 'login',
+            url: '/login',
+            templateUrl: 'templates/login.html',
+            controller: 'LoginController',
+            factory: 'LoginFactory',
+            cache: false
+        },
+        SIDEMENU: {
+            name: 'menu',
+            url: '/menu',
+            templateUrl: 'templates/menu.html',
+            controller: 'SideMenuController'
+        },
+        LANDING: {
+            name: 'menu.landingPage',
+            url: '/landing',
+            templateUrl: 'templates/landing.html',
+            controller: 'LandingController',
+            factory: 'LandingFactory',
+            cache: false,
+        }
     },
     BACK_END: {
-    	MethodName: {
+        MethodName: {
             "getLoggedInUserDetails": "login"
         },
         RequestType: {
