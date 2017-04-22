@@ -114,6 +114,32 @@
                   "ismandatory": "false",
                   "isdefault": "true",
                   "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+                },
+                "Custom Features" : {
+                  "hasbasevalue":"true",
+                  "ismutiselect":"true",
+                  "ismandatory": "false",
+                  "isdefault": "true",
+                  "values":[{"name":"Login Module","Savings":"33%","Total no of Hours":"40","Hours Saved":"13.2"},
+                            {"name":"BlueMix Services integration","Savings":"40%","Total no of Hours":"16","Hours Saved":"6.4"},
+                            {"name":"Push Notification Service","Savings":"60%","Total no of Hours":"12","Hours Saved":"7.2"},
+                            {"name":"IBM Connections App","Savings":"40%","Total no of Hours":"80","Hours Saved":"32"},
+                            {"name":"QR Code Scanner","Savings":"50%","Total no of Hours":"24","Hours Saved":"12"},
+                            {"name":"Basic Hybrid App Functions - Swipe to delete, Pull to refresh","Savings":"50%","Total no of Hours":"16","Hours Saved":"8"},
+                            {"name":"Comments & Ratings","Savings":"40%","Total no of Hours":"24","Hours Saved":"9.6"},
+                            {"name":"Menu Gallery","Savings":"60%","Total no of Hours":"24","Hours Saved":"14.4"},
+                            {"name":"Key Press Events","Savings":"33%","Total no of Hours":"12","Hours Saved":"1.2"},
+                            {"name":"Tying two ionic components (Tab and Side menu)","Savings":"10%","Total no of Hours":"12","Hours Saved":"1.2"},
+                            {"name":"Help text component","Savings":"60%","Total no of Hours":"16","Hours Saved":"9.6"},
+                            {"name":"Chat module","Savings":"60%","Total no of Hours":"30","Hours Saved":"18"},
+                            {"name":"Location based services","Savings":"50%","Total no of Hours":"24","Hours Saved":"12"},
+                            {"name":"Build Scripts & Publish","Savings":"20%","Total no of Hours":"28","Hours Saved":"5.6"},
+                            {"name":"Mobile Analytics - Google, AWS, BlueMix","Savings":"20%","Total no of Hours":"20","Hours Saved":"4"},
+                            {"name":"Payment Gateway integrations","Savings":"20%","Total no of Hours":"20","Hours Saved":"4"},
+                            {"name":"File Upload","Savings":"70%","Total no of Hours":"24","Hours Saved":"16.8"},
+                            {"name":"Date Picker Gallery","Savings":"80%","Total no of Hours":"12","Hours Saved":"9.6"},
+                            {"name":"Tablet Split View","Savings":"80%","Total no of Hours":"16","Hours Saved":"12.8"},
+                            {"name":"Project Creation plugin","Savings":"30%","Total no of Hours":"20","Hours Saved":"6"}]
                 }
         },
         "estimationparameters": {
