@@ -1,20 +1,74 @@
-<ion-view view-title="Welcome">
-  <ion-content>
-    <ion-list>
-      <div ng-repeat="group in groups">
-        <ion-item class="item-stable"
-                  ng-click="toggleGroup(group)"
-                  ng-class="{active: isGroupShown(group)}">
-            <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
-          &nbsp;
-          Group {{group.name}}
-        </ion-item>
-        <ion-item class="item-accordion"
-                  ng-repeat="item in group.items"
-                  ng-show="isGroupShown(group)">
-          {{item}}
-        </ion-item>
-      </div>
-    </ion-list>
-  </ion-content>
+<ion-view view-title="Welcome" class="landing background--pattern">
+    <ion-content>
+        <section class="user-desc padding">
+            <img class="user-avatar" src="img/dummy-avatar.jpg"></img>
+            <div class="margin-left">
+                <div class="welcome font-title">Welcome</div>
+                <div class="font-big">Julia Roberts</div>
+            </div>
+        </section>
+        <section class="list-content">
+            <h6 class="title font-title">Activity Feed</h6>
+            <div class="list">
+                <a class="estimator-card" ng-click="vm.navigateToForm1()">
+                    <div class="card-indicator red"></div>
+                    <div class="card-content flexncenter">
+                        <img class="card-completion" src="../img/Chart/80.png"></img>
+                        <div class="card-body">
+                            <div class="card-title font-title">Client portal proposal</div>
+                            <div class="content-sub flexncenter">
+                                <div class="date"><i class="fa fa-calendar"></i>30/05/2016</div>
+                                <div class="version"><i class="fa fa-bookmark-o"></i>V 1.0</div>
+                            </div>
+                            <div class="content-creator">
+                                <i class="ion-person"></i> Julia Roberts
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD CONTENT -->
+                    <div class="card-footer red"><i class="fa fa-exclamation-circle"></i> Quote is in draft state</div>
+                </a>
+                <!-- END ESTIMATOR CARD -->
+                <a class="estimator-card" ng-click="vm.navigateToForm1()">
+                    <div class="card-indicator orange"></div>
+                    <div class="card-content flexncenter">
+                        <img class="card-completion" src="../img/Chart/50.png"></img>
+                        <div class="card-body">
+                            <div class="card-title font-title">Mobile sales center</div>
+                            <div class="content-sub flexncenter">
+                                <div class="date"><i class="fa fa-calendar"></i>30/05/2017</div>
+                                <div class="version"><i class="fa fa-bookmark-o"></i>V 2.3</div>
+                            </div>
+                            <div class="content-creator">
+                                <i class="ion-person"></i> Miachel Rogers
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD CONTENT -->
+                    <div class="card-footer orange"><i class="fa fa-exclamation-circle"></i> Quote is in draft state</div>
+                </a>
+                <!-- END ESTIMATOR CARD -->
+                <a class="estimator-card" ng-click="vm.navigateToForm1()">
+                    <div class="card-indicator green"></div>
+                    <div class="card-content flexncenter">
+                        <img class="card-completion" src="../img/Chart/80.png"></img>
+                        <div class="card-body">
+                            <div class="card-title font-title">Mattel proposal</div>
+                            <div class="content-sub flexncenter">
+                                <div class="date"><i class="fa fa-calendar"></i>30/05/2015</div>
+                                <div class="version"><i class="fa fa-bookmark-o"></i>V 4.0</div>
+                            </div>
+                            <div class="content-creator">
+                                <i class="ion-person"></i> Julia Roberts
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD CONTENT -->
+                    <div class="card-footer green"><i class="fa fa-exclamation-circle"></i> Quote is Completed.</div>
+                </a>
+                <!-- END ESTIMATOR CARD -->
+            </div>
+        </section>
+    </ion-content>
+    <button class="button button-positive button-fab icon ion-ios-plus-empty" ng-click="vm.navigateToForm1()"></button>
 </ion-view>

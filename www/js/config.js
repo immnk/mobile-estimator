@@ -15,8 +15,9 @@ var ESTIMATOR = {
     },
     CONTROLLERS: {
         LoginController: "LoginController",
-        LandingController: 'LandingController',
-        SideMenuController: 'SideMenuController'
+        LandingController: "LandingController",
+        SideMenuController: "SideMenuController",
+        FormController: "FormController"
     },
     FACTORIES: {
         LoginFactory: "LoginFactory",
@@ -45,6 +46,13 @@ var ESTIMATOR = {
             templateUrl: 'templates/landing.html',
             controller: 'LandingController',
             factory: 'LandingFactory',
+            cache: false,
+        },
+        FORM1: {
+            name: 'menu.form1',
+            url: '/form1',
+            templateUrl: 'templates/forms/form1.html',
+            controller: 'FormController',
             cache: false,
         }
     },

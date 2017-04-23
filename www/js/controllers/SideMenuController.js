@@ -5,6 +5,7 @@ SideMenuController.$inject = ['$scope', '$state', 'utils'];
 function SideMenuController($scope, $state, utils) {
 
     /* jshint validthis: true */
+    var vm = this;
 
     init();
 

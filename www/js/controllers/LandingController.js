@@ -3,38 +3,21 @@ controllers.controller(ESTIMATOR.CONTROLLERS.LandingController, LandingControlle
 LandingController.$inject = ['$scope', '$state', 'utils', ESTIMATOR.FACTORIES.LandingFactory];
 
 function LandingController($scope, $state, utils, LandingFactory) {
-
-    $scope.groups = [];
-    for (var i=0; i<10; i++) {
-      $scope.groups[i] = {
-        name: i,
-        items: []
-      };
-      for (var j=0; j<3; j++) {
-        $scope.groups[i].items.push(i + '-' + j);
-      }
-    }
-
-    /*
-     * if given group is the selected group, deselect it
-     * else, select the given group
-     */
-    $scope.toggleGroup = function(group) {
-      if ($scope.isGroupShown(group)) {
-        $scope.shownGroup = null;
-      } else {
-        $scope.shownGroup = group;
-      }
-    };
-    $scope.isGroupShown = function(group) {
-      return $scope.shownGroup === group;
-    };
-
-
+    /* jshint validthis: true */
+    var vm = this;
+    vm.navigateToForm1 = navigateToForm1;
+    
     init();
+
     function init() {
         utils.Logger.debug(ESTIMATOR.CONTROLLERS.LandingController + " - init :start");
 
         utils.Logger.debug(ESTIMATOR.CONTROLLERS.LandingController + " - init :end");
+    }
+
+    function navigateToForm1() {
+    	utils.Logger.debug(ESTIMATOR.CONTROLLERS.LandingController + " :navigateToForm1 - start");
+    	$state.go(ESTIMATOR.STATES.FORM1.name);
+    	utils.Logger.debug(ESTIMATOR.CONTROLLERS.LandingController + " :navigateToForm1 - end");
     }
 }

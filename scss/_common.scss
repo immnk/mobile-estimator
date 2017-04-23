@@ -1,18 +1,21 @@
 * {
-    font-family: $font-family-book;
+    font-family: $font-family-light;
     box-sizing: border-box;
 }
 
 h1,
-h2,
-h3,
-h4{
+h2 {
     font-family: $font-family-bold;
+}
+
+h3,
+h4 {
+    font-family: $font-family-semibold;
 }
 
 h5,
 h6 {
-    font-family: $font-family-news;
+    font-family: $font-family-regular;
 }
 
 label,
@@ -23,12 +26,63 @@ button,
 dl,
 dt,
 dd {
-    font-family: $font-family-news;
+    font-family: $font-family-regular;
 }
 
 dt {
     font-weight: normal;
 }
+
+.background--pattern {
+    &::before {
+        content: '';
+        background: url(../img/shapes.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.25;
+        background-position: 0px 60vh;
+    }
+}
+
+.button-positive {
+    background: $theme-dark-blue !important;
+    &.activated {
+        background: $theme-light-grey !important;
+        color: $theme-dark-blue !important;
+    }
+}
+
+.button-fab {
+    @include circle(40px);
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.font-title {
+    font-size: 16px;
+}
+
+.font-big {
+    font-size: 24px;
+}
+
+.margin-left {
+    margin-left: 24px;
+}
+
+.flexncenter {
+    @include flex();
+    @include flex-item-center();
+}
+
 
 /* -------------------- START :: ANIMATION FOR LIST ----------------------------*/
 
@@ -38,9 +92,15 @@ ion-item {
     }
 }
 
+
 /* -------------------- END :: ANIMATION FOR LIST ----------------------------*/
 
-input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly] {
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly]:not(.cloned-text-input),
+textarea[readonly]:not(.cloned-text-input),
+select[readonly] {
     background-color: initial;
     cursor: not-allowed;
     color: #5496E0;

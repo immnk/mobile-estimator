@@ -1,3 +1,5 @@
+/** MSC */
+/** Not used */
 @font-face {
   font-family: "OpenSans-Bold";
   src: url("../assets/open-sans/OpenSans-Bold.ttf"); }
@@ -22,6 +24,97 @@
 @font-face {
   font-family: "OpenSans-Italic";
   src: url("../assets/open-sans/OpenSans-Italic.ttf"); }
+* {
+  font-family: "OpenSans-Light";
+  box-sizing: border-box; }
+
+h1,
+h2 {
+  font-family: "OpenSans-Bold"; }
+
+h3,
+h4 {
+  font-family: "OpenSans-Semibold"; }
+
+h5,
+h6 {
+  font-family: "OpenSans-Regular"; }
+
+label,
+input,
+select,
+a,
+button,
+dl,
+dt,
+dd {
+  font-family: "OpenSans-Regular"; }
+
+dt {
+  font-weight: normal; }
+
+.background--pattern::before {
+  content: '';
+  background: url(../img/shapes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.25;
+  background-position: 0px 60vh; }
+
+.button-positive {
+  background: #24376D !important; }
+  .button-positive.activated {
+    background: #F5F5F5 !important;
+    color: #24376D !important; }
+
+.button-fab {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  min-height: 30px;
+  min-width: 30px; }
+
+.font-title {
+  font-size: 16px; }
+
+.font-big {
+  font-size: 24px; }
+
+.margin-left {
+  margin-left: 24px; }
+
+.flexncenter, .landing .user-desc {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center; }
+
+/* -------------------- START :: ANIMATION FOR LIST ----------------------------*/
+ion-item.ng-enter {
+  -webkit-animation: "fadeInLeft" 1s;
+  -moz-animation: "fadeInLeft" 1s;
+  -ms-animation: "fadeInLeft" 1s;
+  animation: "fadeInLeft" 1s; }
+
+/* -------------------- END :: ANIMATION FOR LIST ----------------------------*/
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly]:not(.cloned-text-input),
+textarea[readonly]:not(.cloned-text-input),
+select[readonly] {
+  background-color: initial;
+  cursor: not-allowed;
+  color: #5496E0; }
+
 .bar.bar-stable {
   background-color: #24376D; }
   .bar.bar-stable .title {
@@ -42,53 +135,13 @@
 .list .item.item-accordion.ng-hide-remove {
   display: block !important; }
 
-* {
-  font-family: "OpenSans-Light";
-  box-sizing: border-box; }
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "OpenSans-Bold"; }
-
-h5,
-h6 {
-  font-family: "OpenSans-Regular"; }
-
-label,
-input,
-select,
-a,
-button,
-dl,
-dt,
-dd {
-  font-family: "OpenSans-Regular"; }
-
-dt {
-  font-weight: normal; }
-
-/* -------------------- START :: ANIMATION FOR LIST ----------------------------*/
-ion-item.ng-enter {
-  -webkit-animation: "fadeInLeft" 1s;
-  -moz-animation: "fadeInLeft" 1s;
-  -ms-animation: "fadeInLeft" 1s;
-  animation: "fadeInLeft" 1s; }
-
-/* -------------------- END :: ANIMATION FOR LIST ----------------------------*/
-input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly] {
-  background-color: initial;
-  cursor: not-allowed;
-  color: #5496E0; }
-
 .login_content_wrapper {
   min-height: 100vh;
   background: url("../img/LoginBackground.png");
   background-size: cover;
   position: relative;
   color: #FFFFFF;
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans-Regular";
   overflow: hidden; }
   .login_content_wrapper .overlay {
     position: absolute;
@@ -118,5 +171,73 @@ input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.clon
     text-align: center; }
     .login_content_wrapper .footer .footer-text {
       font-size: 8px; }
+
+.landing .user-desc {
+  color: #24376D; }
+  .landing .user-desc .user-avatar {
+    float: left;
+    height: 75px;
+    width: 75px;
+    border-radius: 37.5px;
+    object-fit: cover; }
+  .landing .user-desc .welcome {
+    text-transform: lowercase; }
+.landing .list-content {
+  padding: 12px; }
+  .landing .list-content .list .estimator-card {
+    background: #FFFFFF;
+    border-top: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    position: relative;
+    margin: 12px 0;
+    display: block;
+    color: black;
+    font-family: "OpenSans-Light"; }
+    .landing .list-content .list .estimator-card.activated {
+      background: #F5F5F5; }
+    .landing .list-content .list .estimator-card .red {
+      background: #EF6F6C;
+      color: #EF6F6C; }
+    .landing .list-content .list .estimator-card .orange {
+      background: #f2951c;
+      color: #f2951c; }
+    .landing .list-content .list .estimator-card .green {
+      background: #56CC00;
+      color: #56CC00; }
+    .landing .list-content .list .estimator-card .card-indicator {
+      width: 7px;
+      position: absolute;
+      top: 0;
+      bottom: 0; }
+    .landing .list-content .list .estimator-card .card-content {
+      margin-left: 7px;
+      padding: 20px 12px; }
+      .landing .list-content .list .estimator-card .card-content .card-completion {
+        width: 75px;
+        height: 75px;
+        object-fit: contain; }
+      .landing .list-content .list .estimator-card .card-content .card-body {
+        margin-left: 20px;
+        flex: 1 0;
+        min-width: 0; }
+        .landing .list-content .list .estimator-card .card-content .card-body .card-title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 16px;
+          text-transform: capitalize;
+          padding-bottom: 5px;
+          font-family: "OpenSans-Regular"; }
+        .landing .list-content .list .estimator-card .card-content .card-body .content-sub {
+          padding-bottom: 7px; }
+          .landing .list-content .list .estimator-card .card-content .card-body .content-sub i {
+            margin-right: 5px; }
+          .landing .list-content .list .estimator-card .card-content .card-body .content-sub .date {
+            margin-right: 15px; }
+    .landing .list-content .list .estimator-card .card-footer {
+      font-family: "OpenSans-Regular";
+      margin-left: 7px;
+      padding: 9px 20px;
+      background: rgba(220, 220, 220, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
