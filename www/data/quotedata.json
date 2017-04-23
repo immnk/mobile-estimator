@@ -3,147 +3,151 @@
         "version": "1",
         "quoteparameters":
         {
-
-                "Business Domain" : {
-                  "hasbasevalue":"false",
-                  "ismutiselect":"false",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":["Retail","Healthcare","Life Insurance","Auto Insurance","Banking","Electrical Components","Manufacturing & Logistics","Utilities"]
+            "Business Domain" : {
+              "hasbasevalue":"false",
+              "ismutiselect":"false",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":["Retail","Healthcare","Life Insurance","Auto Insurance","Banking","Electrical Components","Manufacturing & Logistics","Utilities"]
+            },
+            "Users" : {
+              "hasbasevalue":"false",
+              "ismutiselect":"false",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":["Agents/Brokers","Sales","Customers","Providers","Underwriters","Claim Specialists"]
+            },
+            "Type of Application" : {
+              "hasbasevalue":"false",
+              "ismutiselect":"false",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":["Products Catalog","Account Management","Payment","Customer Service","E-Commerce"]
+            },
+            "Team Distribution" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"false",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":[{"All onshore":"100%"},{"Most onshore":	"80%"},{"Most offshore":"20%"},{"All offshore":"0%"}]
+            },
+            "OS" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":[{"iOS":"8"},{"Android":	"12"},{"Windows":"16"},{"Web":"20"}]
+            },
+            "Screen Complexity" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+            },
+            "Widgets Complexity" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+            },
+            "Native Features" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+            },
+            "User Management" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"false",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":[{"Google":"1"},{"LinkedIn":	"1"},{"Facebook":"1"},{"LDAP":"1.2"}]
+            },
+            "Security Requirements" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "true",
+              "isdefault": "true",
+              "values":[{"SSL":"1.2"},{"Integration with ISAM":	"1.3"},{"2-Factor Authentication":"1.5"},{"Custom Data Encryption":"1.6"}]
+            },
+            "External API Integration" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[{"Internal - SOAP":"1"},{"Internal - REST":	"1.1"},{"External - PublicSOAP":"1.1"},{"External - PublicREST":"1.2"},{"External - CustomSOAP":"1.2"},{"External - CustomREST":"1.3"}]
+            },
+            "Use Cases" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[
+                {"Buy Policy": {
+                                  "level": "Medium",
+                                  "value": "1.2"
+                                }
                 },
-                "Users" : {
-                  "hasbasevalue":"false",
-                  "ismutiselect":"false",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":["Agents/Brokers","Sales","Customers","Providers","Underwriters","Claim Specialists"]
+                {"Pay Policy": {
+                                  "level": "Complex",
+                                  "value": "1.4"
+                                }
                 },
-                "Type of Application" : {
-                  "hasbasevalue":"false",
-                  "ismutiselect":"false",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":["Products Catalog","Account Management","Payment","Customer Service","E-Commerce"]
+                {"Create Claim": {
+                                  "level": "Medium",
+                                  "value": "1.2"
+                                }
                 },
-                "Team Distribution" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"false",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":[{"All onshore":"100%"},{"Most onshore":	"80%"},{"Most offshore":"20%"},{"All offshore":"0%"}]
-                },
-                "OS" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":[{"iOS":"8"},{"Android":	"12"},{"Windows":"16"},{"Web":"20"}]
-                },
-                "Screen Complexity" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
-                },
-                "Widgets Complexity" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
-                },
-                "Native Features" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
-                },
-                "User Management" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"false",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":[{"Google":"1"},{"LinkedIn":	"1"},{"Facebook":"1"},{"LDAP":"1.2"}]
-                },
-                "Security Requirements" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "true",
-                  "isdefault": "true",
-                  "values":[{"SSL":"1.2"},{"Integration with ISAM":	"1.3"},{"2-Factor Authentication":"1.5"},{"Custom Data Encryption":"1.6"}]
-                },
-                "External API Integration" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[{"Internal - SOAP":"1"},{"Internal - REST":	"1.1"},{"External - PublicSOAP":"1.1"},{"External - PublicREST":"1.2"},{"External - CustomSOAP":"1.2"},{"External - CustomREST":"1.3"}]
-                },
-                "Use Cases" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[
-                    {"Buy Policy": {
-                                      "level": "Medium",
-                                      "value": "1.2"
-                                    }
-                    },
-                    {"Pay Policy": {
-                                      "level": "Complex",
-                                      "value": "1.4"
-                                    }
-                    },
-                    {"Create Claim": {
-                                      "level": "Medium",
-                                      "value": "1.2"
-                                    }
-                    },
-                    {"View Claim Status": {
-                                      "level": "Simple",
-                                      "value": "1.1"
-                                    }
-                    }]
-                },
-                "Native Features" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
-                },
-                "Custom Features" : {
-                  "hasbasevalue":"true",
-                  "ismutiselect":"true",
-                  "ismandatory": "false",
-                  "isdefault": "true",
-                  "values":[{"name":"Login Module","Savings":"33%","Total no of Hours":"40","Hours Saved":"13.2"},
-                            {"name":"BlueMix Services integration","Savings":"40%","Total no of Hours":"16","Hours Saved":"6.4"},
-                            {"name":"Push Notification Service","Savings":"60%","Total no of Hours":"12","Hours Saved":"7.2"},
-                            {"name":"IBM Connections App","Savings":"40%","Total no of Hours":"80","Hours Saved":"32"},
-                            {"name":"QR Code Scanner","Savings":"50%","Total no of Hours":"24","Hours Saved":"12"},
-                            {"name":"Basic Hybrid App Functions - Swipe to delete, Pull to refresh","Savings":"50%","Total no of Hours":"16","Hours Saved":"8"},
-                            {"name":"Comments & Ratings","Savings":"40%","Total no of Hours":"24","Hours Saved":"9.6"},
-                            {"name":"Menu Gallery","Savings":"60%","Total no of Hours":"24","Hours Saved":"14.4"},
-                            {"name":"Key Press Events","Savings":"33%","Total no of Hours":"12","Hours Saved":"1.2"},
-                            {"name":"Tying two ionic components (Tab and Side menu)","Savings":"10%","Total no of Hours":"12","Hours Saved":"1.2"},
-                            {"name":"Help text component","Savings":"60%","Total no of Hours":"16","Hours Saved":"9.6"},
-                            {"name":"Chat module","Savings":"60%","Total no of Hours":"30","Hours Saved":"18"},
-                            {"name":"Location based services","Savings":"50%","Total no of Hours":"24","Hours Saved":"12"},
-                            {"name":"Build Scripts & Publish","Savings":"20%","Total no of Hours":"28","Hours Saved":"5.6"},
-                            {"name":"Mobile Analytics - Google, AWS, BlueMix","Savings":"20%","Total no of Hours":"20","Hours Saved":"4"},
-                            {"name":"Payment Gateway integrations","Savings":"20%","Total no of Hours":"20","Hours Saved":"4"},
-                            {"name":"File Upload","Savings":"70%","Total no of Hours":"24","Hours Saved":"16.8"},
-                            {"name":"Date Picker Gallery","Savings":"80%","Total no of Hours":"12","Hours Saved":"9.6"},
-                            {"name":"Tablet Split View","Savings":"80%","Total no of Hours":"16","Hours Saved":"12.8"},
-                            {"name":"Project Creation plugin","Savings":"30%","Total no of Hours":"20","Hours Saved":"6"}]
-                }
+                {"View Claim Status": {
+                                  "level": "Simple",
+                                  "value": "1.1"
+                                }
+                }]
+            },
+            "Native Features" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[{"Simple":"1"},{"Medium":	"1.2"},{"Complex":"1.6"}]
+            },
+            "Custom Features" : {
+              "hasbasevalue":"true",
+              "ismutiselect":"true",
+              "ismandatory": "false",
+              "isdefault": "true",
+              "values":[{"name":"Login Module","Savings":"33%","Total no of Hours":"40","Hours Saved":"13.2"},
+                        {"name":"BlueMix Services integration","Savings":"40%","Total no of Hours":"16","Hours Saved":"6.4"},
+                        {"name":"Push Notification Service","Savings":"60%","Total no of Hours":"12","Hours Saved":"7.2"},
+                        {"name":"IBM Connections App","Savings":"40%","Total no of Hours":"80","Hours Saved":"32"},
+                        {"name":"QR Code Scanner","Savings":"50%","Total no of Hours":"24","Hours Saved":"12"},
+                        {"name":"Basic Hybrid App Functions - Swipe to delete, Pull to refresh","Savings":"50%","Total no of Hours":"16","Hours Saved":"8"},
+                        {"name":"Comments & Ratings","Savings":"40%","Total no of Hours":"24","Hours Saved":"9.6"},
+                        {"name":"Menu Gallery","Savings":"60%","Total no of Hours":"24","Hours Saved":"14.4"},
+                        {"name":"Key Press Events","Savings":"33%","Total no of Hours":"12","Hours Saved":"1.2"},
+                        {"name":"Tying two ionic components (Tab and Side menu)","Savings":"10%","Total no of Hours":"12","Hours Saved":"1.2"},
+                        {"name":"Help text component","Savings":"60%","Total no of Hours":"16","Hours Saved":"9.6"},
+                        {"name":"Chat module","Savings":"60%","Total no of Hours":"30","Hours Saved":"18"},
+                        {"name":"Location based services","Savings":"50%","Total no of Hours":"24","Hours Saved":"12"},
+                        {"name":"Build Scripts & Publish","Savings":"20%","Total no of Hours":"28","Hours Saved":"5.6"},
+                        {"name":"Mobile Analytics - Google, AWS, BlueMix","Savings":"20%","Total no of Hours":"20","Hours Saved":"4"},
+                        {"name":"Payment Gateway integrations","Savings":"20%","Total no of Hours":"20","Hours Saved":"4"},
+                        {"name":"File Upload","Savings":"70%","Total no of Hours":"24","Hours Saved":"16.8"},
+                        {"name":"Date Picker Gallery","Savings":"80%","Total no of Hours":"12","Hours Saved":"9.6"},
+                        {"name":"Tablet Split View","Savings":"80%","Total no of Hours":"16","Hours Saved":"12.8"},
+                        {"name":"Project Creation plugin","Savings":"30%","Total no of Hours":"20","Hours Saved":"6"}]
+            }
         },
         "estimationparameters": {
-
+            "Effort Estimates": {
+              "hasbasevalue":"true",
+              "iseditable":"false",
+              "isdisplayed": "true",
+              "values":[{"Testing":"40"},{"PM":	"20"},{"Architecture":"20"},{"Design":"20"},{"Production & Post Production Support":"2"},{"Testing Support - Developers":"10"},{"UAT Support - Developers":	"5"},{"UAT Support - Testers":	"5"},{"UAT Testing":	"5"}]              
+            }
         },
         "calculatedvalues": {
 
