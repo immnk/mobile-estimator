@@ -1,12 +1,18 @@
-.bar.bar-stable {
-
-  background-color: $theme-dark-blue;
-
-  .title {
-      color: $default-white;
-  }
-
-  .button.button-clear {
-      color: $default-white;
-  }
+.bar.bar-custom {
+    background-color: $theme-dark-blue;
+    .back-text {
+        display: none !important;
+    }
+    .title {
+        color: $default-white;
+    }
+    .button.button-clear {
+        color: $default-white;
+    }
+    .title {
+        color: $theme-foreground;
+        left: 40px !important;
+        text-align: left;
+        text-transform: uppercase;
+    }
 }

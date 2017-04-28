@@ -9,15 +9,17 @@ function Core() {
     return provider;
 
     Factory.$inject = ['$q', '$http', '$rootScope', '$ionicPopup', '$ionicLoading',
-        '$ionicHistory', '$ionicSideMenuDelegate', 'Logger', 'LocalStorage', ESTIMATOR.MESSAGES
+        '$ionicHistory', '$ionicSideMenuDelegate', 'Logger', 'LocalStorage', ESTIMATOR.MESSAGES,
+        ESTIMATOR.CONSTANTS
     ];
 
     function Factory($q, $http, $rootScope, $ionicPopup, $ionicLoading, $ionicHistory,
-        $ionicSideMenuDelegate, Logger, LocalStorage, ESTIMATOR_MESSAGES) {
+        $ionicSideMenuDelegate, Logger, LocalStorage, ESTIMATOR_MESSAGES, ESTIMATOR_CONSTANTS) {
         var service = {};
 
         service.Logger = Logger;
-        service.ESTIMATOR_MESSAGES = ESTIMATOR_MESSAGES;
+        service.MESSAGES = ESTIMATOR_MESSAGES;
+        service.CONSTANTS = ESTIMATOR_CONSTANTS;
 
         service.init = init;
         service.localStorage = LocalStorage;

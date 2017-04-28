@@ -13,5 +13,10 @@ constants.constant(ESTIMATOR.CONSTANTS, {
     },
     "LOGIN": {
         "FORCE_LOGIN": true
+    },
+    "FORM_VALUES": {
+        "android": "Native Android App",
+        "ios": "Native iOS App",
+        "hybrid": "Hybrid App"
     }
 });

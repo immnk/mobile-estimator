@@ -35,21 +35,21 @@ var ESTIMATOR = {
             cache: false
         },
         SIDEMENU: {
-            name: 'menu',
-            url: '/menu',
+            name: 'app',
+            url: '/app',
             templateUrl: 'templates/menu.html',
             controller: 'SideMenuController'
         },
         LANDING: {
-            name: 'menu.landingPage',
-            url: '/landing',
+            name: 'app.dashboard',
+            url: '/dashboard',
             templateUrl: 'templates/landing.html',
             controller: 'LandingController',
             factory: 'LandingFactory',
             cache: false,
         },
         FORM1: {
-            name: 'menu.form1',
+            name: 'app.form1',
             url: '/form1',
             templateUrl: 'templates/forms/form1.html',
             controller: 'FormController',

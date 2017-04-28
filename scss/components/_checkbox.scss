@@ -1,0 +1,81 @@
+.estimator-radiobox,
+.estimator-checkbox {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $theme-light-grey;
+    ion-list .list {
+        @extend .flexncenter;
+        flex-wrap: wrap;
+        .item-radio,
+        .item-checkbox {
+            width: 160px;
+            margin: 12px 0 0 12px;
+            border: none;
+            font-size: 1em;
+            font-family: $font-family-light;
+            @extend .material-shadow;
+        }
+    }
+    input[readonly] {
+        color: $theme-dark-blue;
+    }
+}
+
+.estimator-radiobox {
+    ion-list .list {
+        .item-radio {
+            padding: 0;
+            border-radius: 23px;
+            .radio-content {
+                .item-content {
+                    padding: 12px;
+                    text-align: center;
+                }
+                .radio-icon {
+                    display: none !important;
+                }
+            }
+            input {
+                &:checked {
+                    + .radio-content {
+                        .item-content {
+                            background: $theme-dark-blue;
+                            color: $default-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & > .item {
+        background-color: transparent;
+        box-shadow: none;
+        position: relative;
+        overflow: hidden;
+        padding: 6px 0 5px 16px;
+        border: none;
+        .input-label {
+            padding: 4px 0 0 0px;
+        }
+    }
+}
+
+.estimator-checkbox {
+    ion-list .list {
+        .item-checkbox {
+            border-radius: 28px;
+            padding: 16px;
+            @extend .material-shadow;
+            .checkbox-input-hidden {
+                display: none;
+            }
+            .item-content {
+                text-align: center;
+            }
+            &.checked {
+                background-color: $theme-dark-blue;
+                color: $default-white;
+            }
+        }
+    }
+}

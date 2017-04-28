@@ -1,0 +1,89 @@
+ion-side-menus {
+    ion-side-menu {
+        .decals {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 205px;
+            z-index: 11;
+            opacity: 0.5;
+        }
+        .img-flip {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+            right: 0;
+            left: auto;
+        }
+        .menu {
+            padding: 20px;
+            background: $transparent-background;
+            .user {
+                @include flex();
+                @include flex-item-center();
+                .avatar {
+                    @include circle(50px);
+                }
+                .welcome {
+                    padding-left: 10px;
+                    .hello {
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        color: $theme-dark;
+                    }
+                    .name {
+                        color: $theme-dark-blue;
+                        text-transform: capitalize;
+                        font-family: $font-family-semibold;
+                    }
+                }
+            }
+            .title {
+                text-align: center;
+                font-size: 16px;
+                font-family: $font-family-bold;
+                padding: 10px 0;
+                text-transform: capitalize;
+            }
+            .sub-title {
+                text-align: center;
+                font-size: 12px;
+            }
+            .menu-list {
+                .list {
+                    margin-top: 50px;
+                    ion-item {
+                        background-color: $theme-foreground;
+                        margin: 10px 0px;
+                        border-radius: 50px;
+                        text-align: center;
+                        border: 1px solid $theme-grey;
+                        color: $theme-dark;
+                        .item-content {
+                            background-color: transparent;
+                            font-size: 12px;
+                            font-family: $font-family-light;
+                            text-transform: capitalize;
+                            padding: 10px;
+                        }
+                        &.iactive {
+                            background-color: $theme-dark-blue;
+                            color: $theme-foreground;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            .button-logout {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 0;
+            }
+        }
+    }
+}

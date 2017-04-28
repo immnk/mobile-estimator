@@ -6,11 +6,14 @@ $theme-green: #56CC00;
 $theme-light-grey: #F5F5F5;
 $theme-overlay: rgba(0, 13, 20, 0.9);
 $theme-background-alternate: rgba(216, 216, 216, 0.3);
+$theme-dark: #111111;
 
 /** MSC */
 
 $theme-red: #EF6F6C;
 $theme-gray: #DCDCDC;
+$theme-foreground: #FFF;
+$transparent-background: rgba(255, 255, 255, 0);
 
 /** Not used */
 
@@ -19,7 +22,7 @@ $theme-gray: #DCDCDC;
 // $theme-grid-red: #D0021B;
 // $theme-grid-blue: #4A90E2;
 // $theme-list-alt: #F5F5F5;
-// $theme-dark: #111111;
+
 // $theme-light-black: #666666;
 // $theme-mid-night-blue: #293f7b;
 // $dashboard-grey: #78828D;

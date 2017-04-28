@@ -1,0 +1,25 @@
+.estimator-counter {
+    .counter {
+        @include inline-flex();
+        .button-counter {
+            @include circle(47px);
+            min-width: 47px;
+            min-height: 47px;
+        }
+        span {
+            padding: 0 12px;
+        }
+    }
+    .button-more {
+        float: right;
+        background-color: transparent;
+        &:before {
+            padding: 0px;
+            font-size: 40px;
+        }
+        &.activated {
+            color: $theme-grey;
+            border-color: transparent;
+        }
+    }
+}

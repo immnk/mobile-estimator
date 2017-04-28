@@ -1,6 +1,57 @@
 <ion-view view-title="Add New Estimation" class="form1 background--pattern">
     <ion-content>
-        
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Name</span>
+                <input type="text" placeholder="Enter the estimation name">
+            </label>
+            <div class="estimator-checkbox">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">App Type</span>
+                    <input type="text" placeholder="Enter the estimation name" readonly ng-value="vm.apptypeValue">
+                </label>
+                <ion-list>
+                    <ion-checkbox ng-model="vm.apptype.android" ng-click="vm.bind()" ng-class="{'checked':vm.apptype.android}">Native Android</ion-checkbox>
+                    <ion-checkbox ng-model="vm.apptype.ios" ng-click="vm.bind()" ng-class="{'checked':vm.apptype.ios}">Native iOS</ion-checkbox>
+                    <ion-checkbox ng-model="vm.apptype.hybrid" ng-click="vm.bind()" ng-class="{'checked':vm.apptype.hybrid}">Hybrid App</ion-checkbox>
+                </ion-list>
+            </div>
+            <div class="estimator-counter">
+                <div class="item">
+                    <span class="input-label">Number of Screens</span>
+                    <div class="counter flexncenter">
+                        <button class="button button-positive icon ion-ios-minus-empty button-counter"></button>
+                        <span>{{ vm.numberofScreens }}</span>
+                        <button class="button button-positive icon ion-ios-plus-empty button-counter"></button>
+                    </div>
+                    <button class="button icon icon-right ion-ios-arrow-right button-more">More Details</button>
+                </div>
+            </div>
+            <div class="estimator-radiobox">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Team Compency</span>
+                    <!-- <input type="text" placeholder="Select team compency here" readonly ng-value="vm.compency"> -->
+                </label>
+                <ion-list>
+                    <ion-radio ng-model="vm.compency" ng-value="'Experts'">All Experts</ion-radio>
+                    <ion-radio ng-model="vm.compency" ng-value="'Mostly Experts'">Mostly Experts</ion-radio>
+                    <ion-radio ng-model="vm.compency" ng-value="'Mostly Freshers'">Mostly Freshers</ion-radio>
+                    <ion-radio ng-model="vm.compency" ng-value="'Freshers'">All Freshers</ion-radio>
+                </ion-list>
+            </div>
+            <div class="estimator-radiobox">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Team Composition</span>
+                    <!-- <input type="text" placeholder="Select team composition here" readonly ng-value="vm.composition"> -->
+                </label>
+                <ion-list>
+                    <ion-radio ng-model="vm.composition" ng-value="'Onshore'">All Onshore</ion-radio>
+                    <ion-radio ng-model="vm.composition" ng-value="'Mostly Onshore'">Mostly Onshore</ion-radio>
+                    <ion-radio ng-model="vm.composition" ng-value="'Mostly Offshore'">Mostly Offshore</ion-radio>
+                    <ion-radio ng-model="vm.composition" ng-value="'Offshore'">All Offshore</ion-radio>
+                </ion-list>
+            </div>
+        </div>
     </ion-content>
     <button class="button button-positive button-fab icon ion-ios-arrow-right"></button>
 </ion-view>
