@@ -1,2 +1,1 @@
-# mobile-estimator
-A mobile estimator app
+Project estimator
